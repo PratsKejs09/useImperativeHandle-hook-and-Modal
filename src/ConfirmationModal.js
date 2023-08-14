@@ -26,10 +26,10 @@ const ConfirmationModal = (props, modalRef) => {
         </button>
         <h1 style={{ margin: '20px' }}> Title </h1>
         <div style={{ margin: '20px', fontSize: '20px' }}>Do you confirm?</div>
-        <button ref={confirmRef} className="btn__yes">
+        <button ref={confirmRef} onClick={props.onClose} className="btn__yes">
           Yes
         </button>
-        <button ref={denyRef} className="btn__no">
+        <button ref={denyRef} onClick={props.onClose} className="btn__no">
           No
         </button>
       </div>
