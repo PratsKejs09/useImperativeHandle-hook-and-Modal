@@ -16,7 +16,7 @@ export default function App() {
       <button> Focus Deny </button>
       <ConfirmationModal
         isOpen={isOpen}
-        ref={modalRef}
+        modalRef={modalRef}
         onClose={() => setIsOpen(false)}
       />
     </div>
